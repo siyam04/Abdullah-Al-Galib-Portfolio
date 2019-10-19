@@ -35,6 +35,10 @@ body {
   color: #302F2F;
 }
 
+.brand-logo {
+  top: 3px;
+}
+
 h1,
 h2,
 h3,
@@ -54,6 +58,7 @@ nav {
   width: 90%;
   margin: auto;
 }
+
 .container-fluid ul li a {
   text-transform: uppercase;
   font-weight: 500;
@@ -65,6 +70,7 @@ nav {
 .sidenav {
   background: #222F3E;
 }
+
 .sidenav .sidenav-image {
   background: url(../img/bg_image.jpg);
   background-size: cover;
@@ -72,27 +78,32 @@ nav {
   text-align: center;
   padding-top: 2rem;
 }
+
 .sidenav .sidenav-image img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 4px solid #ffffff;
 }
+
 .sidenav .sidenav-image h4 {
   font-size: 2rem;
   color: #ffffff;
   margin-top: 1rem;
   font-weight: 600;
 }
+
 .sidenav .sidenav-image p {
   font-size: 0.9rem;
   color: #222F3E;
   background: #ffffff;
   padding: 0.5rem 0;
 }
+
 .sidenav li {
   border-bottom: 2px solid rgba(27, 37, 49, 0.3);
 }
+
 .sidenav li a {
   color: #ffffff;
   text-transform: uppercase;
@@ -107,6 +118,7 @@ nav {
   background-position: center;
   display: flex;
 }
+
 .header-image .content {
   display: flex;
   align-items: center;
@@ -118,6 +130,7 @@ nav {
   min-height: 200px;
   /* BOUNCE EFFECT */
 }
+
 .header-image .content .user-name,
 .header-image .content .user-designation {
   text-transform: capitalize;
@@ -127,51 +140,76 @@ nav {
   font-size: 3.5rem;
   text-shadow: 2px 2px 2px #000;
 }
+
 .header-image .content .user-name span.typed,
 .header-image .content .user-designation span.typed {
   color: #00BC8C;
 }
+
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -moz-transform: translateY(-7px);
     transform: translateY(-7px);
   }
+
   60% {
     -moz-transform: translateY(-4px);
     transform: translateY(-4px);
   }
 }
+
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -webkit-transform: translateY(-7px);
     transform: translateY(-7px);
   }
+
   60% {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
   }
 }
+
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -moz-transform: translateY(-7px);
     -ms-transform: translateY(-7px);
     -webkit-transform: translateY(-7px);
     transform: translateY(-7px);
   }
+
   60% {
     -moz-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
@@ -179,6 +217,7 @@ nav {
     transform: translateY(-4px);
   }
 }
+
 .header-image .content a.bounce {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
@@ -191,6 +230,7 @@ nav {
   line-height: 40px;
   margin-top: 2rem;
 }
+
 .header-image .content a.bounce i.fa {
   font-size: 1.2rem;
 }
@@ -200,13 +240,16 @@ section {
   width: 100%;
   height: auto;
 }
+
 section .sec {
   padding: 4rem 0;
 }
+
 section .sec:nth-child(odd) {
   background: #222F3E;
   color: #ffffff;
 }
+
 section .sec h2.title {
   font-size: 4rem;
   text-transform: uppercase;
@@ -214,15 +257,18 @@ section .sec h2.title {
   font-weight: bold;
   margin-bottom: 4rem;
 }
+
 section .sec .box {
   position: relative;
 }
+
 section .sec .box img {
   width: 80%;
   border-radius: 5px;
   z-index: 99;
   position: relative;
 }
+
 section .sec .box .bg-overlay {
   width: 95%;
   height: 250px;
@@ -232,67 +278,85 @@ section .sec .box .bg-overlay {
   margin-left: 3rem;
   border-radius: 5px;
 }
+
 section .sec .description {
   margin-top: 1rem;
   text-align: justify;
 }
+
 section .sec .description .btn {
   margin-top: 1rem;
   font-weight: 600;
 }
+
 section .sec.section-2 {
   text-align: center;
 }
+
 section .sec.section-2 .tabs .indicator {
   background: #00BC8C;
 }
+
 section .sec.section-2 .tabs a {
   font-size: 1.5rem;
   font-weight: bold;
   color: #00BC8C;
 }
-section .sec.section-2 .tabs a:active, section .sec.section-2 .tabs a:focus {
+
+section .sec.section-2 .tabs a:active,
+section .sec.section-2 .tabs a:focus {
   background: none;
   border: none;
 }
+
 section .sec.section-2 .development,
 section .sec.section-2 .graphic-design {
   padding-top: 3rem;
 }
+
 section .sec.section-2 .development .card {
   padding: 1.5rem 0;
   transition: all 400ms ease;
 }
+
 section .sec.section-2 .development .card img {
   width: 55px;
 }
+
 section .sec.section-2 .development .card i.fab {
   font-size: 3rem;
   padding-bottom: 1rem;
 }
+
 section .sec.section-2 .development .card h4 {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 section .sec.section-2 .development .card:hover {
   transform: scale(1.08);
 }
+
 section .sec.section-2 .graphic-design .card .photoshop img,
 section .sec.section-2 .graphic-design .card .illustrator img {
   width: 150px;
 }
+
 section .sec.section-2 .graphic-design .card .xd img {
   width: 75px;
   margin: 2.6rem;
 }
+
 section .sec.section-2 .graphic-design .card h4 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 2rem;
 }
+
 section .sec.section-3 {
   position: relative;
 }
+
 section .sec.section-3 .card {
   text-align: center;
   position: relative;
@@ -300,6 +364,7 @@ section .sec.section-3 .card {
   transition: all 400ms ease;
   background: none;
 }
+
 section .sec.section-3 .card .icons {
   background: #222F3E;
   position: absolute;
@@ -308,6 +373,7 @@ section .sec.section-3 .card .icons {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
 section .sec.section-3 .card .icons i.fas {
   font-size: 1.3rem;
   display: block;
@@ -315,24 +381,30 @@ section .sec.section-3 .card .icons i.fas {
   width: 65px;
   line-height: 65px;
 }
+
 section .sec.section-3 .card h4 {
   text-transform: uppercase;
   margin-top: 2rem;
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 section .sec.section-3 .card p {
   font-size: 0.9rem;
 }
+
 section .sec.section-3 .card:hover {
   transform: scale(1.1);
 }
+
 section .sec.section-3 .card:hover h4 {
   color: #00BC8C;
 }
+
 section .sec.section-4 .portfolio .p-box {
   position: relative;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card {
   background-color: transparent;
   width: 100%;
@@ -340,6 +412,7 @@ section .sec.section-4 .portfolio .p-box .flip-card {
   perspective: 1000px;
   margin-bottom: 1.2rem;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-inner {
   position: relative;
   width: 100%;
@@ -349,9 +422,11 @@ section .sec.section-4 .portfolio .p-box .flip-card-inner {
   transform-style: preserve-3d;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-front,
 section .sec.section-4 .portfolio .p-box .flip-card-back {
   position: absolute;
@@ -359,53 +434,65 @@ section .sec.section-4 .portfolio .p-box .flip-card-back {
   height: 100%;
   backface-visibility: hidden;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-front {
   color: black;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-front img {
   width: 100%;
   height: 100%;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-back {
   background-color: #00BC8C;
   color: #222F3E;
   transform: rotateY(180deg);
   padding-top: 2.5rem;
 }
+
 section .sec.section-4 .portfolio .p-box .flip-card-back .btn {
   background: #222F3E;
 }
+
 section .sec.section-5 .contact-box {
   display: flex;
   padding: 1rem;
   padding-right: 1.5rem;
   border-radius: 5px;
 }
+
 section .sec.section-5 .contact-box .card {
   background: none;
   box-shadow: none;
 }
+
 section .sec.section-5 .contact-box .card.box-1 {
   flex: 2;
 }
+
 section .sec.section-5 .contact-box .card.box-1 form {
   margin-right: 1rem;
 }
+
 section .sec.section-5 .contact-box .card.box-1 form h5 {
   text-transform: uppercase;
   padding-top: 1rem;
   padding-left: 0.8rem;
   font-weight: bold;
 }
+
 section .sec.section-5 .contact-box .card.box-1 form button.btn {
   margin-left: 0.8rem;
   font-family: "Poppins";
   font-weight: 500;
   caret-color: #222F3E;
 }
+
 section .sec.section-5 .contact-box .card.box-2 {
   flex: 1;
 }
+
 section .sec.section-5 .contact-box .card.box-2 iframe {
   width: 100%;
   height: 100%;
@@ -417,14 +504,17 @@ footer {
   padding: 0;
   text-align: center;
 }
+
 footer ul {
   background: #00BC8C;
   padding: 1rem 0;
   margin: auto;
 }
+
 footer ul li {
   display: inline-block;
 }
+
 footer ul li a {
   display: block;
   border-radius: 50%;
@@ -435,13 +525,16 @@ footer ul li a {
   margin: 0.7rem;
   transition: all 400ms ease;
 }
+
 footer ul li a i.fas {
   font-size: 1.5rem;
 }
+
 footer ul li a:hover {
   background: #ffffff;
   color: #222F3E;
 }
+
 footer p {
   background: #009771;
   text-transform: uppercase;
@@ -453,10 +546,10 @@ footer p {
 
 .scrollTop {
   position: fixed;
-  right: 5%;
-  bottom: 5%;
-  width: 60px;
-  height: 60px;
+  right: 25px;
+  bottom: 25px;
+  width: 45px;
+  height: 45px;
   transition: all 0.4s ease-in-out 0s;
   text-align: center;
   opacity: 0;
@@ -465,10 +558,16 @@ footer p {
 .scrollTop a {
   display: block;
   background: #00BC8C;
-  line-height: 60px;
+  line-height: 45px;
   color: #ffffff;
-  border-radius: 50%;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
 @media (max-width: 992px) {
@@ -476,6 +575,7 @@ footer p {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .header-image .content {
     width: 100%;
@@ -485,29 +585,36 @@ footer p {
     width: 80%;
     margin-left: 54px;
   }
+
   section .sec .box .bg-overlay {
     width: 92%;
     height: 160px;
   }
+
   section .sec .description {
     margin-top: 0;
     margin-left: 1rem;
   }
+
   section .sec.section-4 .portfolio .p-box .flip-card {
     background-color: transparent;
     width: 100%;
     height: 200px;
   }
+
   section .sec.section-5 .contact-box {
     display: block;
     padding: 1rem;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form {
     margin: 0;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form h5 {
     display: none;
   }
+
   section .sec.section-5 .contact-box .card.box-2 {
     margin: 0 1rem;
   }
@@ -523,18 +630,22 @@ footer p {
     opacity: 0;
   }
 }
+
 @media (min-width: 568px) {
   section .sec .box {
     text-align: center;
   }
+
   section .sec .description {
     margin: 2rem;
     margin-top: 0;
   }
 }
+
 @media (max-width: 568px) {
+
   .header-image .content .user-name,
-.header-image .content .user-designation {
+  .header-image .content .user-designation {
     font-size: 3rem;
   }
 
@@ -542,6 +653,7 @@ footer p {
     width: 60%;
     margin-left: 10px;
   }
+
   section .sec .box .bg-overlay {
     margin: 0;
     margin-left: 0px;
@@ -550,113 +662,142 @@ footer p {
     height: 194px;
     margin-left: 4rem;
   }
+
   section .sec .description {
     margin-top: 2rem;
   }
+
   section .sec h2.title {
     font-size: 3rem;
   }
+
   section .sec.section-4 .portfolio .p-box .flip-card {
     background-color: transparent;
     width: 100%;
     height: 250px;
   }
 }
+
 @media (max-width: 414px) {
+
   .header-image .content .user-name,
-.header-image .content .user-designation {
+  .header-image .content .user-designation {
     font-size: 2rem;
   }
 
   section .sec h2.title {
     font-size: 3rem;
   }
+
   section .sec.section-2 .tabs a {
     font-size: 1.2rem;
   }
+
   section .sec .box {
     text-align: center;
   }
+
   section .sec .box img {
     width: 60%;
     margin-left: 0px;
   }
+
   section .sec .box .bg-overlay {
     width: 77%;
     height: 212px;
     margin-left: 3rem;
   }
+
   section .sec .description {
     margin-top: 4rem;
     margin-left: 0;
   }
+
   section .sec.section-2 .graphic-design .card {
     padding-top: 2rem;
   }
+
   section .sec.section-2 .graphic-design .card .photoshop img,
-section .sec.section-2 .graphic-design .card .illustrator img {
+  section .sec.section-2 .graphic-design .card .illustrator img {
     width: 90px;
   }
+
   section .sec.section-2 .graphic-design .card .xd img {
     width: 50px;
     margin: 1.6rem;
   }
+
   section .sec.section-4 .portfolio .p-box .flip-card {
     width: 100%;
     height: 200px;
   }
+
   section .sec.section-5 .contact-box {
     padding: 1rem 0;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form {
     margin: 0;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form h5 {
     display: none;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form button.btn {
     font-size: 0.9rem;
   }
+
   section .sec.section-5 .contact-box .card.box-1 form button.btn i {
     font-size: 0.9rem;
   }
+
   section .sec.section-5 .contact-box .card.box-2 {
     margin: 0 1rem;
   }
 }
+
 @media (max-width: 360px) {
   section .sec .box img {
     width: 75%;
     margin-left: 0px;
   }
+
   section .sec .box .bg-overlay {
     width: 100%;
     height: 233px;
     margin-left: 0;
   }
+
   section .sec.section-2 .tabs a {
     font-size: 1rem;
   }
+
   section .sec.section-2 .development .card h4 {
     font-size: 1rem;
   }
+
   section .sec.section-2 .graphic-design .card h4 {
     font-size: 1rem;
     padding: 0 2rem 2rem 2rem;
   }
+
   section .sec.section-4 .portfolio .p-box .flip-card {
     width: 100%;
     height: 180px;
   }
 }
+
 @media (max-width: 320px) {
   section .sec .box img {
     width: 80%;
   }
+
   section .sec .box .bg-overlay {
     width: 100%;
     height: 210px;
   }
+
   section .sec.section-4 .portfolio .p-box .flip-card {
     width: 100%;
     height: 160px;
