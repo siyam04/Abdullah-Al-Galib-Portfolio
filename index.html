@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <title>S. Rahman</title>
+
+    <link rel="shortcut icon" type="image/svg" href="img/logo/fbicon_color.svg">
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Quicksand:400,500,700|Roboto:300,400,500,700"
@@ -22,9 +25,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" type="image/svg" href="img/logo/fbicon_color.svg">
-
-    <title>Portfolio</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <div class="container-fluid">
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo">
-                        <img src="img/logo/white_logo.png" alt="" width="60px">
+                        <img src="img/logo/color_logo.svg" alt="" width="60px">
                     </a>
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
@@ -69,18 +69,43 @@
     </div>
     <!-- navbar -->
 
-    <div class="header-image">
-        <div class="content z-depth-3">
-            <h1 class="user-name"> i'm <span>s. rahman</span> </h1>
-            <h1 class="user-designation">I'm <span class="typed"></span></h1>
-            <a class="bounce z-depth-2" href="#about">
-                <i class="fa fa-angle-down"></i>
-            </a>
+    <div class="particles" id="particles-js">
+        <div class="container-fluid">
+
+            <div class="content z-depth-">
+                <h5 class="user-text">Hello! I am</h5>
+                <h1 class="user-name"> <span>sohanur rahman</span> </h1>
+                <h1 class="user-designation"><span class="typed"></span></h1>
+                <!-- <a class="bounce z-depth-2" href="#about">
+                    <i class="fa fa-angle-down"></i>
+                </a> -->
+                <div class="btn-group">
+                    <a href="#about" class="btn teal-light waves-effect waves-light z-depth-3">about me</a>
+                    <a href="https://drive.google.com/open?id=1sMjt_mQ7RkgobZAWNV68_UfhUCYjm-Eb"
+                        class="btn waves-effect waves-light z-depth-3" download>get resume <i
+                            class="fa fa-cloud-download-alt"></i></a>
+                </div>
+
+            </div>
+
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sohanoor" class="z-depth-2"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://github.com/Joy210" class="z-depth-2"><i class="fab fa-github-alt"></i></a></li>
+                    <li><a href="https://www.facebook.com/joy.think" class="z-depth-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.behance.net/_joy" class="z-depth-2"><i class="fab fa-behance"></i></a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
 
-    <section>
+    <section class="main-section">
         <div class="sec section-1" id="about">
             <h2 class="title"> about </h2>
             <div class="container">
@@ -103,9 +128,9 @@
                             I am very passionate about Programming and Design since my university life.
                             <br>
 
-                            <a class="btn waves-effect waves-light z-depth-3"
+                            <a class="btn teal-light waves-effect waves-light z-depth-3"
                                 href="https://drive.google.com/open?id=1sMjt_mQ7RkgobZAWNV68_UfhUCYjm-Eb" download>
-                                Download cv<i class="tiny material-icons right">file_download</i>
+                                get resume<i class="fa fa-cloud-download-alt"></i>
                             </a>
                         </div>
                     </div>
@@ -168,9 +193,9 @@
                             <div class="col s6 m6 l3">
                                 <div class="card z-depth-2">
                                     <div class="dev-icon">
-                                        <img src="img/materializecss.png" alt="">
+                                        <i class="fab fa-git-square"></i>
                                     </div>
-                                    <h4>Materialize</h4>
+                                    <h4>Git</h4>
                                 </div>
                             </div>
                             <div class="col s6 m6 l3">
@@ -474,7 +499,7 @@
 
 
     <div id="stop" class="scrollTop">
-        <a href="#" class="z-depth-2">Top</a>
+        <a href="#" class="z-depth-2"><i class="fas fa-angle-up"></i></a>
     </div>
 
 
@@ -486,7 +511,8 @@
 
     <!-- typed.js text animation -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-
+    <script src="https://cldup.com/S6Ptkwu_qA.js"></script>
+    <script src="js/particle.js"></script>
     <script src="js/index.js"></script>
 
 </body>
