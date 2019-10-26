@@ -334,15 +334,15 @@ canvas {
 }
 
 .main-section .sec .box img {
-  width: 80%;
+  width: 60%;
   border-radius: 5px;
   z-index: 99;
   position: relative;
 }
 
 .main-section .sec .box .bg-overlay {
-  width: 95%;
-  height: 320px;
+  width: 80.5%;
+  height: 240px;
   background: black;
   position: absolute;
   top: 10%;
@@ -423,21 +423,21 @@ canvas {
 .main-section .sec.section-2 .graphic-design .card {
   background: none;
   border: 2px solid #2c3e50;
+  padding: 2rem;
 }
 
 .main-section .sec.section-2 .graphic-design .card .photoshop img,
 .main-section .sec.section-2 .graphic-design .card .illustrator img {
-  width: 150px;
+  width: auto;
 }
 
 .main-section .sec.section-2 .graphic-design .card .xd img {
-  width: 75px;
-  margin: 2.6rem;
+  width: auto;
 }
 
 .main-section .sec.section-2 .graphic-design .card h4 {
   font-size: 1.5rem;
-  padding-bottom: 2rem;
+  margin-top: 20px;
 }
 
 .main-section .sec.section-3 {

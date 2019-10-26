@@ -405,15 +405,15 @@ canvas {
             position: relative;
 
             img {
-                width: 80%;
+                width: 60%;
                 border-radius: 5px;
                 z-index: 99;
                 position: relative;
             }
 
             .bg-overlay {
-                width: 95%;
-                height: 320px;
+                width: 80.5%;
+                height: 240px;
                 background: black;
                 position: absolute;
                 top: 10%;
@@ -495,21 +495,23 @@ canvas {
             .graphic-design .card {
                 background: none;
                 border: 2px solid $dark_light;
+                padding: 2rem;
 
                 .photoshop img,
                 .illustrator img {
-                    width: 150px;
+                    width: auto;
                 }
 
                 .xd img {
-                    width: 75px;
-                    margin: 2.6rem;
+                    width: auto;
+                    // margin: 2.6rem;
                 }
 
                 h4 {
                     font-size: 1.5rem;
                     // font-weight: bold;
-                    padding-bottom: 2rem;
+                    // padding-bottom: 2rem;
+                    margin-top: 20px;
                 }
             }
         }
