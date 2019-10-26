@@ -202,31 +202,25 @@ canvas {
         .btn-group {
             margin-top: 2rem;
             margin-left: 10px;
-        }
 
-        a.btn {
-            &:first-child {
-                // color: $dark_deep;
-            }
-
-            &:last-child {
+            a:last-child {
+                border: 1px solid $light_green;
+                background: transparent;
                 color: $light_green;
-                background: none;
-                border: 2px solid $light_green;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
 
-                &:hover {
-                    background: $light_green;
-                    color: $white;
+                i {
+                    font-size: 14px;
+                    margin-left: 6px;
                 }
-            }
-
-            i.fa {
-                font-size: 14px;
-                padding-left: 6px;
-                color: $light_green;
 
                 &:hover {
-                    color: $white;
+                    background: $white;
+
                 }
             }
         }

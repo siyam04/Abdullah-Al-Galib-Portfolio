@@ -184,25 +184,24 @@ canvas {
   margin-left: 10px;
 }
 
-.particles .content a.btn:last-child {
+.particles .content .btn-group a:last-child {
+  border: 1px solid #00cf5d;
+  background: transparent;
   color: #00cf5d;
-  background: none;
-  border: 2px solid #00cf5d;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
-.particles .content a.btn:last-child:hover {
-  background: #00cf5d;
-  color: #ffffff;
-}
-
-.particles .content a.btn i.fa {
+.particles .content .btn-group a:last-child i {
   font-size: 14px;
-  padding-left: 6px;
-  color: #00cf5d;
+  margin-left: 6px;
 }
 
-.particles .content a.btn i.fa:hover {
-  color: #ffffff;
+.particles .content .btn-group a:last-child:hover {
+  background: #ffffff;
 }
 
 .particles .content a.bounce {
