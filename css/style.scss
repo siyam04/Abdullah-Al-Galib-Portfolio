@@ -99,7 +99,7 @@ nav {
 }
 
 .sidenav {
-    background: ($dark_light);
+    z-index: 999999999;
     background: ($dark_deep);
 
     .sidenav-image {
@@ -693,12 +693,33 @@ canvas {
                 font-weight: 600;
             }
 
-            .certificate_1 {
-                margin-bottom: 30px;
+            .certificate_1,
+            .certificate_2 {
+                //margin-bottom: 30px;
+                text-align: center;
+                padding: 30px 10px;
+                background: $dark_deep;
+                border: 2px solid #394C62;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
             }
 
             .university {
                 font-style: italic;
+            }
+        }
+
+        .certifications {
+            button {
+                background: $white !important;
+                border-radius: 2px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
             }
         }
 
@@ -753,6 +774,16 @@ canvas {
 
         &.section-4 {
             .portfolio {
+                button {
+                    background: $white;
+                    border: 1px solid $dark_deep;
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                }
+
                 .p-box {
                     position: relative;
 
@@ -762,6 +793,11 @@ canvas {
                         height: 180px;
                         perspective: 1000px;
                         margin-bottom: 1.2rem;
+                        border-radius: 2px;
+                        -webkit-border-radius: 2px;
+                        -moz-border-radius: 2px;
+                        -ms-border-radius: 2px;
+                        -o-border-radius: 2px;
                     }
 
                     .flip-card-inner {
@@ -772,6 +808,11 @@ canvas {
                         transition: transform 0.6s;
                         transform-style: preserve-3d;
                         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+                        border-radius: 2px;
+                        -webkit-border-radius: 2px;
+                        -moz-border-radius: 2px;
+                        -ms-border-radius: 2px;
+                        -o-border-radius: 2px;
                     }
 
                     .flip-card:hover .flip-card-inner {
@@ -795,6 +836,8 @@ canvas {
                             width: 100%;
                             height: 100%;
                         }
+
+
                     }
 
                     .flip-card-back {
@@ -810,6 +853,19 @@ canvas {
                         }
                     }
 
+                    .title {
+                        background: $dark_deep;
+                        color: $white;
+                        padding: 10px;
+                        border: 2px solid #394C62;
+                        font-weight: 600;
+                        border-radius: 2px;
+                        -webkit-border-radius: 2px;
+                        -moz-border-radius: 2px;
+                        -ms-border-radius: 2px;
+                        -o-border-radius: 2px;
+                    }
+
                 }
             }
 
@@ -818,40 +874,52 @@ canvas {
         &.section-5 {
             .contact-box {
                 display: flex;
-                padding: 1rem;
-                padding-right: 1.5rem;
+                padding: 1.3rem 1.5rem;
                 border-radius: 5px;
 
                 .card {
                     background: none;
                     box-shadow: none;
+                    margin: 0;
 
                     &.box-1 {
-                        flex: 2;
+                        flex-basis: 60%;
 
-                        form {
-                            margin-right: 1rem;
 
-                            h5 {
-                                text-transform: uppercase;
-                                padding-top: 1rem;
-                                padding-left: 0.8rem;
-                                font-weight: bold;
-                            }
-
-                            button.btn {
-                                margin-left: 0.8rem;
-                                font-family: ($font_R);
-                                font-weight: bold;
-                                caret-color: ($dark_light);
-                                caret-color: ($dark_deep);
-                                // background: ($);
-                            }
+                        h4 {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: $light_green;
                         }
+
+
+                        ul li span {
+                            color: $light_green;
+                            font-weight: 600;
+                        }
+
+                        // form {
+                        //     margin-right: 1rem;
+
+                        //     h5 {
+                        //         text-transform: uppercase;
+                        //         padding-top: 1rem;
+                        //         padding-left: 0.8rem;
+                        //         font-weight: bold;
+                        //     }
+
+                        //     button.btn {
+                        //         margin-left: 0.8rem;
+                        //         font-family: ($font_R);
+                        //         font-weight: bold;
+                        //         caret-color: ($dark_light);
+                        //         caret-color: ($dark_deep);
+                        //     }
+                        // }
                     }
 
                     &.box-2 {
-                        flex: 1;
+                        flex-basis: 40%;
 
                         iframe {
                             width: 100%;
@@ -1038,6 +1106,13 @@ footer {
 
 @media (max-width: 568px) {
 
+
+    .main-section .sec.section-5 .contact-box .card.box-1,
+    .main-section .sec.section-5 .contact-box .card.box-2 {
+        flex-basis: 100% !important;
+    }
+
+
     .header-image .content .user-name,
     .header-image .content .user-designation {
         font-size: 3rem;
@@ -1135,36 +1210,36 @@ footer {
 
         }
 
-        &.section-5 {
-            .contact-box {
-                padding: 1rem 0;
+        // &.section-5 {
+        //     .contact-box {
+        //         padding: 1rem 0;
 
-                .card {
-                    &.box-1 {
-                        form {
-                            margin: 0;
+        //         .card {
+        //             &.box-1 {
+        //                 form {
+        //                     margin: 0;
 
-                            h5 {
-                                display: none;
-                            }
+        //                     h5 {
+        //                         display: none;
+        //                     }
 
-                            button.btn {
-                                // background: ($);
-                                font-size: 0.9rem;
+        //                     button.btn {
+        //                         // background: ($);
+        //                         font-size: 0.9rem;
 
-                                i {
-                                    font-size: 0.9rem;
-                                }
-                            }
-                        }
-                    }
+        //                         i {
+        //                             font-size: 0.9rem;
+        //                         }
+        //                     }
+        //                 }
+        //             }
 
-                    &.box-2 {
-                        margin: 0 1rem;
-                    }
-                }
-            }
-        }
+        //             &.box-2 {
+        //                 margin: 0 1rem;
+        //             }
+        //         }
+        //     }
+        // }
     }
 
 }
@@ -1241,6 +1316,10 @@ footer {
 
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
+.slider {
+    height: 100% !important;
+}
+
 .slick-slide {
     margin: 0px 10px;
 }

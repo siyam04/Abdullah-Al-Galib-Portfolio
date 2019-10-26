@@ -192,7 +192,7 @@
 .slick-prev {
     left: 5px;
     z-index: 999;
-    background: #00cf5d;
+    /* background: #00cf5d; */
     width: 30px;
     height: 30px;
 }
@@ -221,7 +221,7 @@
 .slick-next {
     right: 5px;
     z-index: 999;
-    background: #00cf5d;
+    /* background: #00cf5d; */
     width: 30px;
     height: 30px;
 
@@ -234,7 +234,7 @@
 
 .slick-next:before {
     content: '→';
-    background: #00cf5d;
+    /* background: #00cf5d; */
     width: 30px;
     height: 30px;
     border-radius: 2px;
@@ -246,7 +246,7 @@
 
 [dir='rtl'] .slick-next:before {
     content: '←';
-    background: #00cf5d;
+    /* background: #00cf5d; */
     width: 30px;
     height: 30px;
     border-radius: 2px;
