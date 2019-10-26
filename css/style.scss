@@ -61,6 +61,10 @@ $color_2: #39C4B1;
     font-weight: 600;
 }
 
+a {
+    outline: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -75,6 +79,10 @@ nav {
     background: ($dark_light);
     background: ($dark_deep);
     border-bottom: 3px solid $white;
+}
+
+.navbar-fixed {
+    z-index: 99999;
 }
 
 .container-fluid {
@@ -386,7 +394,7 @@ canvas {
         }
 
         h2.title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-transform: uppercase;
             text-align: center;
             font-weight: bold;
@@ -509,12 +517,22 @@ canvas {
         &.section-3 {
             position: relative;
 
+            .col {
+
+                &:nth-child(4) .card,
+                &:nth-child(5) .card,
+                &:nth-child(6) .card {
+                    margin-bottom: 0;
+                }
+            }
+
             .card {
                 text-align: center;
                 position: relative;
                 margin-bottom: 4rem;
                 transition: all 400ms ease;
                 background: none;
+                border: 2px solid #394C62;
 
                 .icons {
                     background: $dark_light;
@@ -523,6 +541,7 @@ canvas {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     border-radius: 50%;
+                    border: 2px solid #394C62;
 
                     i.fas {
                         font-size: 1.3rem;
@@ -546,9 +565,12 @@ canvas {
                 }
 
                 &:hover {
-                    transform: scale(1.1);
+                    // transform: scale(1.05);
+                    // -webkit-transform: scale(1.05);
+                    // -moz-transform: scale(1.05);
+                    // -ms-transform: scale(1.05);
+                    // -o-transform: scale(1.05);
 
-                    // i.fas,
                     h4 {
                         color: ($light_green);
                     }
@@ -556,12 +578,12 @@ canvas {
             }
         }
 
-        .experience{
-            .duration{
+        .experience {
+            .duration {
                 background: $light_green;
                 padding: 3px 8px;
                 font-size: 14px;
-                font-weight: bold;
+                font-weight: 600;
                 text-transform: capitalize;
                 border-radius: 2px;
                 -webkit-border-radius: 2px;
@@ -570,35 +592,40 @@ canvas {
                 -o-border-radius: 2px;
             }
 
-            .designation{
+            .designation {
                 margin-top: 10px;
                 font-weight: 600;
             }
 
-            .company{
+            .company {
                 font-style: italic;
             }
 
-            .lists{
-                padding: 0 17px;
+            .lists {
+                // padding: 0 17px;
 
-                li{
-                    list-style-type: disclosure-closed;
+                li {
+                    i {
+                        color: $light_green;
+                    }
+
+                    // list-style-type: disclosure-closed;
                 }
             }
         }
 
 
-        &.section-3-2{
+        &.section-3-2,
+        &.section-3-3 {
             // position: relative;
 
-            .education{
+            .education {
                 position: relative;
                 width: 100%;
                 height: 200px;
             }
 
-            .edu_1::before{
+            .edu_1::before {
                 content: '';
                 width: 3px;
                 height: 200px;
@@ -614,7 +641,7 @@ canvas {
                 -o-transform: translateX(-50%);
             }
 
-            .edu_1::after{
+            .edu_1::after {
                 content: '';
                 width: 15px;
                 height: 15px;
@@ -629,7 +656,7 @@ canvas {
                 -o-transform: translateX(-50%) rotate(-45deg);
             }
 
-            .edu_2{
+            .edu_2 {
                 position: absolute;
                 right: 0;
                 text-align: right;
@@ -643,13 +670,14 @@ canvas {
                 background: $light_green;
                 position: absolute;
                 bottom: 32px;
-                right: 48.4%;
-                transform: translateX(-48.4%) rotate(-45deg);
-                -webkit-transform: translateX(-48.4%) rotate(-45deg);
-                -moz-transform: translateX(-48.4%) rotate(-45deg);
-                -ms-transform: translateX(-48.4%) rotate(-45deg);
-                -o-transform: translateX(-48.4%) rotate(-45deg);
-}
+                left: 50%;
+                transform: translateX(-50%) rotate(-45deg);
+                -webkit-transform: translateX(-50%) rotate(-45deg);
+                -moz-transform: translateX(-50%) rotate(-45deg);
+                -ms-transform: translateX(-50%) rotate(-45deg);
+                -o-transform: translateX(-50%) rotate(-45deg);
+            }
+
             .duration {
                 border: 1px solid $white;
                 color: $white;
@@ -669,12 +697,61 @@ canvas {
                 font-weight: 600;
             }
 
-            // .edu_1 {
-            //     margin-bottom: 20px;
-            // }
+            .certificate_1 {
+                margin-bottom: 30px;
+            }
 
-            .university{
+            .university {
                 font-style: italic;
+            }
+        }
+
+        &.section-3-4 {
+
+            .accomplishments {
+                width: 100%;
+                height: 100%;
+
+                .box {
+                    padding: 25px 20px;
+                    border: 2px solid $dark_light;
+                    text-align: left;
+                    min-height: 290px;
+                }
+
+                .duration {
+                    background: $white;
+                    // border: 1px solid $white;
+                    color: $dark_light;
+                    padding: 3px 8px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                }
+
+                .title {
+                    margin-top: 10px;
+                }
+
+                .desc {
+                    text-align: justify;
+                }
+
+                .link {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+
+                    a {
+                        text-decoration: none;
+                        color: $light_green;
+                    }
+                }
             }
         }
 
@@ -1162,3 +1239,28 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+
+
+
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+.slick-slide {
+    margin: 0px 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+}
+
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
