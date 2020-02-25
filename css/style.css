@@ -3,6 +3,14 @@ body {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background: #56ffa2;
+}
+
+::selection {
+  background: #56ffa2;
+}
+
 .teal-light {
   background: #00cf5d;
 }
@@ -12,23 +20,23 @@ body {
 }
 
 .html {
-  color: #DD4B25;
+  color: #dd4b25;
 }
 
 .css {
-  color: #1572B6;
+  color: #1572b6;
 }
 
 .js {
-  color: #F7C130;
+  color: #f7c130;
 }
 
 .sass {
-  color: #C96195;
+  color: #c96195;
 }
 
 .bootstrap {
-  color: #533B78;
+  color: #533b78;
 }
 
 .dev-icon i {
@@ -55,7 +63,7 @@ h6 {
 
 nav {
   background: #2c3e50;
-  background: #222F3E;
+  background: #222f3e;
   border-bottom: 3px solid #ffffff;
 }
 
@@ -78,7 +86,7 @@ nav {
 
 .sidenav {
   z-index: 999999999;
-  background: #222F3E;
+  background: #222f3e;
 }
 
 .sidenav .sidenav-image {
@@ -106,7 +114,7 @@ nav {
 .sidenav .sidenav-image p {
   font-size: 0.9rem;
   color: #2c3e50;
-  color: #222F3E;
+  color: #222f3e;
   background: #ffffff;
   padding: 0.5rem 0;
 }
@@ -130,7 +138,7 @@ canvas {
   width: 100%;
   height: 90vh;
   background: #2c3e50;
-  background: #222F3E;
+  background: #222f3e;
 }
 
 .particles {
@@ -282,7 +290,7 @@ canvas {
   border-radius: 50%;
   background: #ffffff;
   color: #2c3e50;
-  color: #222F3E;
+  color: #222f3e;
   text-align: center;
   width: 40px;
   line-height: 40px;
@@ -316,7 +324,7 @@ canvas {
 }
 
 .main-section .sec:nth-child(even) {
-  background: #222F3E;
+  background: #222f3e;
   color: #ffffff;
 }
 
@@ -396,7 +404,7 @@ canvas {
 }
 
 .main-section .sec.isotope .tab-list li:hover a {
-  color: #222F3E;
+  color: #222f3e;
 }
 
 .main-section .sec.isotope .tab-list li a {
@@ -448,7 +456,7 @@ canvas {
 }
 
 .main-section .sec.isotope .card .card-image.box4 {
-  background: url(../img/img2.png);
+  background: url(../img/AppDesign.jpg);
   background-size: cover;
 }
 
@@ -566,7 +574,7 @@ canvas {
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
   background: none;
-  border: 2px solid #394C62;
+  border: 2px solid #394c62;
 }
 
 .main-section .sec.section-3 .card .icons {
@@ -577,7 +585,7 @@ canvas {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 2px solid #394C62;
+  border: 2px solid #394c62;
 }
 
 .main-section .sec.section-3 .card .icons i.fas {
@@ -636,7 +644,7 @@ canvas {
 }
 
 .main-section .sec.section-3-2 .edu_1::before, .main-section .sec.section-3-3 .edu_1::before {
-  content: '';
+  content: "";
   width: 3px;
   height: 200px;
   background: #00cf5d;
@@ -651,7 +659,7 @@ canvas {
 }
 
 .main-section .sec.section-3-2 .edu_1::after, .main-section .sec.section-3-3 .edu_1::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background: #00cf5d;
@@ -673,7 +681,7 @@ canvas {
 }
 
 .main-section .sec.section-3-2 .edu_2::after, .main-section .sec.section-3-3 .edu_2::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background: #00cf5d;
@@ -711,8 +719,8 @@ canvas {
 .main-section .sec.section-3-3 .certificate_2 {
   text-align: center;
   padding: 30px 10px;
-  background: #222F3E;
-  border: 2px solid #394C62;
+  background: #222f3e;
+  border: 2px solid #394c62;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -780,7 +788,7 @@ canvas {
 
 .main-section .sec.section-4 .portfolio button {
   background: #ffffff;
-  border: 1px solid #222F3E;
+  border: 1px solid #222f3e;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -852,7 +860,7 @@ canvas {
 .main-section .sec.section-4 .portfolio .p-box .flip-card-back {
   background-color: #00cf5d;
   color: #2c3e50;
-  color: #222F3E;
+  color: #222f3e;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   padding-top: 2.5rem;
@@ -860,14 +868,14 @@ canvas {
 
 .main-section .sec.section-4 .portfolio .p-box .flip-card-back .btn {
   background: #2c3e50;
-  background: #222F3E;
+  background: #222f3e;
 }
 
 .main-section .sec.section-4 .portfolio .p-box .title {
-  background: #222F3E;
+  background: #222f3e;
   color: #ffffff;
   padding: 10px;
-  border: 2px solid #394C62;
+  border: 2px solid #394c62;
   font-weight: 600;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -938,7 +946,7 @@ footer ul li a {
   display: block;
   border-radius: 50%;
   background: #2c3e50;
-  background: #222F3E;
+  background: #222f3e;
   color: #ffffff;
   width: 40px;
   line-height: 40px;
@@ -954,7 +962,7 @@ footer ul li a i.fas {
 footer ul li a:hover {
   background: #ffffff;
   color: #2c3e50;
-  color: #222F3E;
+  color: #222f3e;
 }
 
 footer p {
