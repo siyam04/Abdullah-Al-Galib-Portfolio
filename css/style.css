@@ -441,32 +441,32 @@ canvas {
 }
 
 .main-section .sec.isotope .card .card-image.box7 {
-  background: url(../img/img8.jpg);
+  background: url(../img/projects/odlrs.png);
   background-size: cover;
 }
 
 .main-section .sec.isotope .card .card-image.box6 {
-  background: url(../img/img1.jpg);
+  background: url(../img/projects/EAS_UI.JPG);
   background-size: cover;
 }
 
 .main-section .sec.isotope .card .card-image.box5 {
-  background: url(../img/img6.jpg);
+  background: url(../img/projects/food-service.png);
   background-size: cover;
 }
 
 .main-section .sec.isotope .card .card-image.box4 {
-  background: url(../img/AppDesign.jpg);
+  background: url(../img/projects/job_portal.png);
   background-size: cover;
 }
 
 .main-section .sec.isotope .card .card-image.box3 {
-  background: url(../img/img7.jpg);
+  background: url(../img/projects/blog-portfolio.png);
   background-size: cover;
 }
 
 .main-section .sec.isotope .card .card-image.box2 {
-  background: url(../img/img4.jpg);
+  background: url(../img/projects/protidin_info.png);
   background-size: cover;
 }
 
@@ -512,11 +512,22 @@ canvas {
 }
 
 .main-section .sec.section-2 .development .card {
-  padding: 1.5rem 0;
+  color: #00cf5d;
+  /* padding: 1.5rem 0; */
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
   background: none;
   border: 2px solid #2c3e50;
+  height: 120px;
+  position: relative;
+  text-align: center;
+}
+
+.main-section .sec.section-2 .development .card h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-section .sec.section-2 .development .card img {
@@ -597,7 +608,7 @@ canvas {
 }
 
 .main-section .sec.section-3 .card h4 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin-top: 1rem;
   font-weight: bold;
   font-size: 1.5rem;
@@ -700,7 +711,7 @@ canvas {
 }
 
 .main-section .sec.section-3-2 .university, .main-section .sec.section-3-3 .university {
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 .main-section .sec .certifications button {
