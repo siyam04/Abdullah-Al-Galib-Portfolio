@@ -28,7 +28,7 @@ $(document).ready(function () {
     //////////////////////////////////////////////////////////
     // animated text
     const typed = new Typed(".typed", {
-        strings: ["Frontend Developer", "UI Designer"],
+        strings: ["Software Engineer"],
         loop: true,
         typeSpeed: 50,
         backSpeed: 50,

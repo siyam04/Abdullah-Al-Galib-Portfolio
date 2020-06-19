@@ -7,9 +7,12 @@ body {
   scroll-behavior: smooth;
 }
 
-$font_R: "Roboto", sans-serif;
-$font_P: "Poppins", sans-serif;
-$font_Q: "Quicksand", sans-serif;
+$font_R: "Roboto",
+sans-serif;
+$font_P: "Poppins",
+sans-serif;
+$font_Q: "Quicksand",
+sans-serif;
 $red: #f44336;
 $white: #ffffff;
 $dark_light: #2c3e50;
@@ -247,6 +250,7 @@ canvas {
     /* BOUNCE EFFECT */
 
     @-moz-keyframes bounce {
+
       0%,
       20%,
       50%,
@@ -268,6 +272,7 @@ canvas {
     }
 
     @-webkit-keyframes bounce {
+
       0%,
       20%,
       50%,
@@ -289,6 +294,7 @@ canvas {
     }
 
     @keyframes bounce {
+
       0%,
       20%,
       50%,
@@ -463,6 +469,7 @@ canvas {
           }
         }
       }
+
       .card {
         // border-radius: 3px;
 
@@ -489,30 +496,37 @@ canvas {
             text-align: center;
           }
 
+          // project images
           &.box7 {
             background: url(../img/img8.jpg);
             background-size: cover;
           }
+
           &.box6 {
             background: url(../img/img1.jpg);
             background-size: cover;
           }
+
           &.box5 {
             background: url(../img/img6.jpg);
             background-size: cover;
           }
+
           &.box4 {
             background: url(../img/AppDesign.jpg);
             background-size: cover;
           }
+
           &.box3 {
             background: url(../img/img7.jpg);
             background-size: cover;
           }
+
           &.box2 {
             background: url(../img/img4.jpg);
             background-size: cover;
           }
+
           &.box1 {
             background: url(../img/img3.png);
             background-size: cover;
@@ -521,6 +535,7 @@ canvas {
           &:hover {
             background-position: bottom;
           }
+
           &:hover .card-title {
             bottom: -40px;
             // display: none;
@@ -615,6 +630,7 @@ canvas {
       position: relative;
 
       .col {
+
         &:nth-child(4) .card,
         &:nth-child(5) .card,
         &:nth-child(6) .card {
@@ -625,7 +641,7 @@ canvas {
       .card {
         text-align: center;
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         transition: all 400ms ease;
         background: none;
         border: 2px solid #394c62;
@@ -651,7 +667,7 @@ canvas {
 
         h4 {
           text-transform: uppercase;
-          margin-top: 2rem;
+          margin-top: 1rem;
           font-weight: bold;
           font-size: 1.5rem;
         }
@@ -717,39 +733,41 @@ canvas {
       .education {
         position: relative;
         width: 100%;
-        height: 200px;
+        // height: 200px;
+        padding-bottom: 2rem;
+        text-align: center;
       }
 
-      .edu_1::before {
-        content: "";
-        width: 3px;
-        height: 200px;
-        background: $light_green;
-        position: absolute;
-        // top: 0;
-        left: 50%;
-        z-index: 999;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-      }
+      // .edu_1::before {
+      //   content: "";
+      //   width: 3px;
+      //   height: 200px;
+      //   background: $light_green;
+      //   position: absolute;
+      //   // top: 0;
+      //   left: 50%;
+      //   z-index: 999;
+      //   transform: translateX(-50%);
+      //   -webkit-transform: translateX(-50%);
+      //   -moz-transform: translateX(-50%);
+      //   -ms-transform: translateX(-50%);
+      //   -o-transform: translateX(-50%);
+      // }
 
-      .edu_1::after {
-        content: "";
-        width: 15px;
-        height: 15px;
-        background: $light_green;
-        position: absolute;
-        top: 45px;
-        left: 50%;
-        transform: translateX(-50%) rotate(-45deg);
-        -webkit-transform: translateX(-50%) rotate(-45deg);
-        -moz-transform: translateX(-50%) rotate(-45deg);
-        -ms-transform: translateX(-50%) rotate(-45deg);
-        -o-transform: translateX(-50%) rotate(-45deg);
-      }
+      // .edu_1::after {
+      //   content: "";
+      //   width: 15px;
+      //   height: 15px;
+      //   background: $light_green;
+      //   position: absolute;
+      //   top: 45px;
+      //   left: 50%;
+      //   transform: translateX(-50%) rotate(-45deg);
+      //   -webkit-transform: translateX(-50%) rotate(-45deg);
+      //   -moz-transform: translateX(-50%) rotate(-45deg);
+      //   -ms-transform: translateX(-50%) rotate(-45deg);
+      //   -o-transform: translateX(-50%) rotate(-45deg);
+      // }
 
       .edu_2 {
         position: absolute;
@@ -1192,6 +1210,7 @@ footer {
 }
 
 @media (max-width: 568px) {
+
   .main-section .sec.section-5 .contact-box .card.box-1,
   .main-section .sec.section-5 .contact-box .card.box-2 {
     flex-basis: 100% !important;
@@ -1236,6 +1255,7 @@ footer {
 }
 
 @media (max-width: 414px) {
+
   .header-image .content .user-name,
   .header-image .content .user-designation {
     font-size: 2rem;
@@ -1319,6 +1339,25 @@ footer {
     //         }
     //     }
     // }
+  }
+}
+
+ul.info {
+  margin-bottom: 0;
+
+  li {
+    line-height: 40px;
+    font-weight: normal;
+
+    span {
+      background: #fff;
+      color: #222f3e;
+      text-transform: capitalize;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin-right: 5px;
+      font-weight: bold;
+    }
   }
 }
 
